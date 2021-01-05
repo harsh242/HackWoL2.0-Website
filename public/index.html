@@ -8,8 +8,600 @@
     <link href="build/css/tailwind.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1 class="text-blue-900 text-2xl">Tailwind build</h1>
+<body class="bg-gray-900">
+
+    <!-- NAVBAR SECTION STARTS-->
+
+    <header class="text-gray-400 bg-gray-900 font-body sticky top-0 bg-opacity-50">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <nav class="flex lg:w-2/3 flex-wrap items-center text-base md:ml-auto">
+                <a href="#about" class="mr-5 hover:text-white">About</a>
+                <a href="#tracks" class="mr-5 hover:text-white">Tracks</a>
+                <a href="#events" class="mr-5 hover:text-white">Events</a>
+                <a href="#schedule" class="mr-5 hover:text-white">Schedule</a>
+                <a href="#sponsors" class="mr-5 hover:text-white">Sponsors</a>
+                <a href="#faq" class="mr-5 hover:text-white">FAQ</a>
+                <a href="#contact" class="mr-5 hover:text-white">Contact</a>
+            </nav>
+            <div class="lg:w-1/3 inline-flex lg:justify-end ml-5 lg:ml-0">
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-400 hover:text-pink-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400 hover:text-pink-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400 hover:text-pink-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400 hover:text-pink-400">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR SECTION ENDS-->
+
+    <!-- HERO SECTION STARTS-->
+
+    <section class="text-gray-400 bg-gray-900 font-body hero">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-6xl text-3xl font-black text-white">HackWoL2.0
+                </h1>
+                <h2 class="text-xl text-pink-400 tracking-widest font-medium title-font mb-4">27th-29th January 2021
+                </h2>
+
+                <p class="mb-8 leading-relaxed">A 36-hour long online hackathon with prizes worth over ₹30000 and lots
+                    of exciting schwag!
+                </p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Apply
+                        with Devfolio</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Join
+                        us on Discord</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION ENDS-->
+
+
+
+    <!-- ABOUT SECTION STARTS-->
+
+    <section class="text-gray-400 bg-gray-900 font-body about" id="about">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-5xl text-3xl mb-4 font-black text-white">About HackWoL2.0</h1>
+                <p class="mb-8 leading-relaxed">Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag
+                    typewriter affogato, hella selvage wolf narwhal dreamcatcher.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION ENDS-->
+
+    <!-- TRACKS SECTION STARTS-->
+
+
+    <section class="text-gray-400 bg-gray-900 font-body tracks" id="tracks">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-8">
+                <h1 class="sm:text-5xl text-3xl font-black title-font mb-4 text-white">Tracks</h1>
+            </div>
+            <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                        </svg>
+                        <p class="leading-relaxed">HealthCare</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                        </svg>
+                        <p class="leading-relaxed">Blockchain</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed">Open Innovation</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <p class="leading-relaxed">AI/ML</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 font-body events" id="events">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-col text-center w-full mb-24">
+                <h2 class="text-s text-pink-400 tracking-widest font-medium title-font mb-1">LEARN AND HACK</h2>
+                <h1 class="sm:text-5xl text-3xl font-black title-font text-white">Events</h1>
+            </div>
+            <div class="container px-5 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/720x400" alt="blog">
+                            <div class="p-6">
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Android Study Jam</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Register
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/721x401" alt="blog">
+                            <div class="p-6">
+
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Intro to UI/UX</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Register
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/722x402" alt="blog">
+                            <div class="p-6">
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Explore ML</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Register
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/722x402" alt="blog">
+                            <div class="p-6">
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Intro to Competitive
+                                    Programming and Roadmap to Placements</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Register
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/722x402" alt="blog">
+                            <div class="p-6">
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Interview Expriences</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Register
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/722x402" alt="blog">
+                            <div class="p-6">
+                                <h1 class="title-font text-lg font-medium text-white mb-3">Web Development Bootcamp</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha
+                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-pink-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRACKS SECTION ENDS-->
+
+
+    <!-- SCHEDULE SECTION STARTS-->
+
+
+    <section class="text-gray-400 bg-gray-900 font-body schedule" id="schedule">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+            <div class="flex flex-col text-center w-full mb-8">
+                <h1 class="sm:text-5xl text-3xl font-black title-font mb-4 text-white">Hackathon Schedule
+                </h1>
+            </div>
+            <div class="flex mx-auto flex-wrap mb-20">
+                <a
+                    class="px-12 py-3 w-1/3 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-pink-500 text-white tracking-wider rounded-t">
+                    Day 1
+                </a>
+                <a
+                    class="px-12 py-3 w-1/3 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
+                    Day 2
+                </a>
+                <a
+                    class="px-12 py-3 w-1/3 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
+                    Day 3
+                </a>
+
+            </div>
+            <div class="day1" id="day1">
+                <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-pink-500 text-white relative z-10 title-font font-medium text-sm">
+                        1</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div class="flex-shrink-0 w-24 h-24  text-pink-400  inline-flex items-center justify-center">
+                            <p class="leading-relaxed">15:00 - 17:00</p>
+                        </div>
+                        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-white mb-1 text-xl">Opening Ceremony & Speaker
+                                Sessions
+                            </h2>
+                            <p class="leading-relaxed">Rachit Watts - Life at Headout
+                                Bhagat Singh - 35k Hours
+                                Abhinav Chhikara - Design Hacks for Non-Designers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-pink-500 text-white relative z-10 title-font font-medium text-sm">
+                        2</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div class="flex-shrink-0 w-24 h-24  text-pink-400  inline-flex items-center justify-center">
+                            <p class="leading-relaxed">15:00 - 17:00</p>
+                        </div>
+                        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-white mb-1 text-xl">Hacking Begins!</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-pink-500 text-white relative z-10 title-font font-medium text-sm">
+                        3</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div class="flex-shrink-0 w-24 h-24 text-pink-400  inline-flex items-center justify-center">
+                            <p class="leading-relaxed">15:00 - 17:00</p>
+                        </div>
+                        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-white mb-1 text-xl">Speakers AMA</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                    <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-pink-500 text-white relative z-10 title-font font-medium text-sm">
+                        4</div>
+                    <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                        <div class="flex-shrink-0 w-24 h-24  text-pink-400 inline-flex items-center justify-center">
+                            <p class="leading-relaxed">15:00 - 17:00</p>
+                        </div>
+                        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                            <h2 class="font-medium title-font text-white mb-1 text-xl">Speaker Sessions</h2>
+                            <p class="leading-relaxed">Madhuri Maram - No-Code
+                                Aakash Goel - Side-hacking with a full-time job
+                                Shivansh Saini - Ergo: Fault-tolerant approach to task offloading</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCHEDULE SECTION ENDS-->
+
+
+    <!-- SPONSORS SECTION STARTS -->
+    <section class="text-gray-400 bg-gray-900 font-body sponsors" id="sponsors">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-8">
+                <h1 class="sm:text-5xl text-3xl font-black title-font mb-4 text-white">Sponsors
+                </h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/420x260">
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/421x261">
+                    </a>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/422x262">
+                    </a>
+
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/423x263">
+                    </a>
+
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/424x264">
+                    </a>
+
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/425x265">
+                    </a>
+
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/427x267">
+                    </a>
+
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            src="https://dummyimage.com/428x268">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPONSORS SECTION ENDS -->
+
+    <!-- FAQ SECTION STARTS-->
+
+    <section class="text-gray-400 font-body bg-gray-900 faq" id="faq">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-5xl text-3xl font-black title-font mb-2 text-white">Frequently asked questions
+                    </h1>
+                    <p class="leading-relaxed text-gray-400 text-opacity-90">Can't find the answer you are looking for?.
+                        <br />
+                        <a href="mailto:dscnitj@gmail.com" class="text-pink-400">Reach out to our Team</a> </p>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="flex items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+                        <div class="flex-grow sm:text-left  mt-6 sm:mt-0">
+                            <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast
+                                vegan
+                                taxidermy. Gastropub indxgo juice poutine.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start  mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+                        <div class="flex-grow sm:text-left  mt-6 sm:mt-0">
+                            <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast
+                                vegan
+                                taxidermy. Gastropub indxgo juice poutine.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+                        <div class="flex-grow sm:text-left  mt-6 sm:mt-0">
+                            <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast
+                                vegan
+                                taxidermy. Gastropub indxgo juice poutine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ SECTION ENDS-->
+
+    <!-- CONTACT SECTION STARTS -->
+
+
+    <section class="text-gray-400 bg-gray-900 font-body overflow-hidden contact" id="contact">
+        <div class="container px-5 pb-16 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">For any further queries, reach out to us below!
+                </p>
+                <h1 class="sm:text-6xl text-4xl font-black title-font mb-2 text-white">dscnitj@gmail.com</h1>
+                <div class="flex mx-auto overflow-hidden mt-6">
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a class="text-gray-600 hover:text-pink-400">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-16 h-16" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-600 hover:text-pink-400">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-16 h-16" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-600 hover:text-pink-400">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-16 h-16" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-600 hover:text-pink-400">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-16 h-16" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS-->
+
+    <footer class="text-gray-400 bg-gray-900 font-body footer" id="footer">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <span class="ml-3 text-xl">HackWoL2.0</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                ©
+                2021 — HackWoL2.0
+
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://devfolio.co/code-of-conduct" class="text-gray-500 ml-1 underline" target="_blank"
+                    rel="noopener noreferrer">Code of Conduct</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- FOOTER SECTION ENDS-->
 </body>
 
 </html>
