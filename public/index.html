@@ -38,6 +38,10 @@
         rel="stylesheet">
     <link href="build/css/tailwind.css" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-900">
@@ -61,7 +65,7 @@
                 id="nav-content">
                 <nav class="flex lg:w-2/3 flex-wrap items-center text-base md:ml-auto">
                     <a href="#about" class="mr-5 hover:text-white">About</a>
-                    <a href="#tracks" class="mr-5 hover:text-white">Tracks</a>
+                    <a href="#rules" class="mr-5 hover:text-white">Rules</a>
                     <a href="#events" class="mr-5 hover:text-white">Events</a>
                     <a href="#schedule" class="mr-5 hover:text-white">Schedule</a>
                     <a href="#sponsors" class="mr-5 hover:text-white">Sponsors</a>
@@ -76,14 +80,7 @@
                                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                             </svg>
                         </a>
-                        <a class="ml-3 text-gray-400 hover:text-pink-400">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                </path>
-                            </svg>
-                        </a>
+
                         <a class="ml-3 text-gray-400 hover:text-pink-400">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -149,7 +146,7 @@
     <section class="text-gray-400 bg-gray-900 font-body about" id="about">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+                <img src="https://dummyimage.com/600x400/000/fff">
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -157,19 +154,18 @@
                 <p class="mb-8 leading-relaxed">
 
                     HackMol2.0 is a community - focused 36 Hours Long Virtual Hackathon organized by <span
-                        class='text-pink-400'> <strong> DSC NIT Jalandhar</strong></span>, designed especially for the
+                        class='text-pink-400'> <strong> DSC NIT Jalandhar</strong></span>, designed especially
+                    for the
                     needs
-                    of the community itself. Whether you are a beginner or expert ,here is a perfect chance to show your
+                    of the community itself. Whether you are a beginner or expert ,here is a perfect chance to
+                    show your
                     skills and witness
                     a competitive yet inclusive developer community around it.<br> <br>
 
-                    In light of the Covid-19 outbreak, your safety and well being are our primary concern. Hence all the
+                    In light of the Covid-19 outbreak, your safety and well being are our primary concern. Hence
+                    all the
                     activities
                     Related to HackMol2.0 like workshops,talks will be hosted Virtually.
-
-
-
-
                 </p>
             </div>
         </div>
@@ -179,61 +175,57 @@
 
     <!-- ABOUT SECTION ENDS-->
 
-    <!-- TRACKS SECTION STARTS-->
+    <!-- RULES SECTION STARTS-->
 
 
-    <section class="text-gray-400 bg-gray-900 font-body tracks" id="tracks">
+    <section class="text-gray-400 font-body bg-gray-900">
         <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-8">
-                <h1 class="sm:text-5xl text-3xl font-black title-font mb-4 text-white">Tracks</h1>
+            <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+                <h1 class="title-font sm:text-5xl text-3xl mb-4 font-black text-white">Rules</h1>
+
             </div>
-            <div class="flex flex-wrap -m-4 text-center">
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                            <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                        </svg>
-                        <p class="leading-relaxed">HealthCare</p>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-pink-400 mb-4">
+                            1
+                        </div>
+                        <p class="leading-relaxed text-base">Each participant has to register on Devfolio. Confused?
+                            Join our discord: Click Here.</p>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                        </svg>
-                        <p class="leading-relaxed">Blockchain</p>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-pink-400 mb-4">
+                            2
+                        </div>
+                        <p class="leading-relaxed text-base">Each participant has to register on Devfolio. Confused?
+                            Join our discord: Click Here.</p>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                        <p class="leading-relaxed">AI/ML</p>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-pink-400 mb-4">
+                            3
+                        </div>
+                        <p class="leading-relaxed text-base">Each participant has to register on Devfolio. Confused?
+                            Join our discord: Click Here.</p>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="text-pink-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                            <path
-                                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
-                            </path>
-                        </svg>
-                        <p class="leading-relaxed">Open Innovation</p>
-                    </div>
-                </div>
+
+
+
             </div>
+
         </div>
     </section>
+    <!-- RULES SECTION ENDS-->
 
+
+    <!-- EVENTS SECTION STARTS-->
     <section class="text-gray-400 bg-gray-900 font-body events" id="events">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
             <div class="flex flex-col text-center w-full mb-24">
@@ -899,14 +891,7 @@
                                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                             </svg>
                         </a>
-                        <a class="ml-2 text-gray-600 hover:text-pink-400">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-16 h-16" viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                </path>
-                            </svg>
-                        </a>
+
                         <a class="ml-2 text-gray-600 hover:text-pink-400">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-16 h-16" viewBox="0 0 24 24">
@@ -985,11 +970,16 @@
         document.getElementById(tabID).classList.add("block");
     }
 </script>
+
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
 
 <script>
